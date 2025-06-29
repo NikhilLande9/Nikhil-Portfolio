@@ -74,13 +74,13 @@ const Contact: React.FC = () => {
     {
       icon: <Twitter className="w-6 h-6" />,
       name: 'Twitter',
-      url: 'https://twitter.com/nikhillande',
+      url: 'https://x.com/NiKhamLan',
       color: 'hover:text-blue-400'
     },
     {
       icon: <MessageSquare className="w-6 h-6" />,
       name: 'Discord',
-      url: 'https://discord.com/users/nikhillande',
+      url: 'https://discord.com/users/613736290650816540',
       color: 'hover:text-indigo-500'
     }
   ];

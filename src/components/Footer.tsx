@@ -87,9 +87,9 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
             <div className="space-y-2 text-gray-400">
-              <p>Mumbai, India</p>
-              <p>nikhil.lande@example.com</p>
-              <p>+91 98765 43210</p>
+              <p>Kharghar, Navi Mumbai, India</p>
+              <p>nikhillande9@gmail.com</p>
+              <p>+91 8369191257</p>
             </div>
             <div className="mt-4">
               <span className="inline-flex items-center px-3 py-1 bg-green-900/20 text-green-400 rounded-full text-sm">

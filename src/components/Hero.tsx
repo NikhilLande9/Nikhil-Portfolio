@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:nikhil.lande@example.com"
+              href="mailto:nikhillande9@gmail.com"
               className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-accent-pink"
             >
               <Mail size={24} />
