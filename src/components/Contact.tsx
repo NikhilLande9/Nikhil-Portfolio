@@ -20,22 +20,27 @@ const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+  const { name, email, subject, message } = formData;
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
-  };
+  const text = `New Contact Message:%0A
+Name: ${encodeURIComponent(name)}%0A
+Email: ${encodeURIComponent(email)}%0A
+Subject: ${encodeURIComponent(subject)}%0A
+Message: ${encodeURIComponent(message)}`;
+
+  const whatsappURL = `https://wa.me/8369191257?text=${text}`;
+
+  window.open(whatsappURL, "_blank");
+
+  setIsSubmitted(true);
+  setTimeout(() => {
+    setIsSubmitted(false);
+    setFormData({ name: '', email: '', subject: '', message: '' });
+  }, 3000);
+};
+
 
   const contactInfo = [
     {
