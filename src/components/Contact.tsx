@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
     subject: '',
     message: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitting, ] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -30,7 +30,7 @@ Email: ${encodeURIComponent(email)}%0A
 Subject: ${encodeURIComponent(subject)}%0A
 Message: ${encodeURIComponent(message)}`;
 
-  const whatsappURL = `https://wa.me/8369191257?text=${text}`;
+  const whatsappURL = `https://wa.me/918369191257?text=${text}`;
 
   window.open(whatsappURL, "_blank");
 
